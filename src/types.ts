@@ -13,9 +13,10 @@ export interface FigmaGlobal {
   readonly id: string;
   readonly name: string;
   readonly visible?: boolean;
-
+  readonly children?: ReadonlyArray<FigmaNode>;
   readonly type: NodeType;
   readonly prototypeStartNodeID?: string;
+  readonly transitionNodeID?: string;
 }
 
 export type NodeType =
