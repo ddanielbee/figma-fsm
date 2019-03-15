@@ -1,0 +1,38 @@
+{
+  "name": "figma-fsm",
+  "version": "0.0.1",
+  "description": "A Figma prototype to XState syntax Finite State Machine representation",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc ./src/index.ts --outDir ./lib",
+    "smoketest": "npm run build && node ./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddanielbee/figma-fsm.git"
+  },
+  "author": "Daniel Bolivar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddanielbee/figma-fsm/issues"
+  },
+  "homepage": "https://github.com/ddanielbee/figma-fsm#readme",
+  "dependencies": {
+    "axios": "0.18.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "24.5.0",
+    "jest-cli": "24.5.0",
+    "ts-jest": "23.10.5",
+    "tslint": "5.13.0",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.3.1",
+    "typescript-tslint-plugin": "0.3.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "no-default-export": true,
+    "quotemark": [false],
+    "variable-name": [true, "allow-leading-underscore", "allow-pascal-case", "check-format"],
+    "object-literal-sort-keys": false,
+    "object-literal-key-quotes": [false],
+    "interface-name": [true, "never-prefix"],
+    "ordered-imports": [false],
+    "semicolon": [false],
+    "arrow-parens": false,
+    "trailing-comma": [false],
+    "jsx-wrap-multiline": false,
+    "jsx-no-multiline-js": false,
+    "no-index-in-import": true
+  },
+  "rulesDirectory": ["./node_modules/hc-tslint-rules/dist/rules"]
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "sourceMap": false,
+    "inlineSourceMap": true
+  },
+  "exclude": ["node_modules", "src/node_modules"]
+}
