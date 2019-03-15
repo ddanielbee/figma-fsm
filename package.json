@@ -1,9 +1,12 @@
 {
   "name": "figma-fsm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Figma prototype to XState syntax Finite State Machine representation",
-  "main": "/lib/index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "directories": {
     "lib": "lib"
   },
