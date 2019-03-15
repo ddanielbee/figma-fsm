@@ -73,7 +73,6 @@ export interface FrameBase extends FigmaGlobal {
   readonly blendMode: BlendMode;
   readonly preserveRatio?: boolean;
   readonly constraints: LayoutConstraint;
-  readonly transitionNodeID?: string | null;
   readonly transitionDuration?: number | null;
   readonly transitionEasing?: EasingType | null;
   readonly opacity?: number;
@@ -99,7 +98,6 @@ export interface VectorBase extends FigmaGlobal {
   readonly blendMode: BlendMode;
   readonly preserveRatio?: boolean;
   readonly constraints: LayoutConstraint;
-  readonly transitionNodeID?: string | null;
   readonly transitionDuration?: number | null;
   readonly transitionEasing?: EasingType | null;
   readonly opacity?: number;

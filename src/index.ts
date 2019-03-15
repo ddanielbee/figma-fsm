@@ -9,5 +9,3 @@ export const figmaPrototypesToFiniteStateMachines = async (
   const fileData = await getFigmaFile(token, fileKey);
   return transformFileToFiniteStateMachines(fileData);
 };
-
-module.exports = figmaPrototypesToFiniteStateMachines;

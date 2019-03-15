@@ -1,24 +1,20 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "target": "es5",
     "outDir": "./lib",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noEmit": true,
     "noEmitOnError": true,
     "noImplicitReturns": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "importHelpers": true,
     "downlevelIteration": true,
-    "jsx": "react",
-    "sourceMap": true,
-    "allowJs": true,
-    "checkJs": true,
-    "lib": ["dom", "es5", "es2015", "es2016"],
+    "sourceMap": false,
+    "declaration": true,
     "plugins": [
       {
         "name": "typescript-tslint-plugin"
@@ -27,6 +23,5 @@
     "typeRoots": ["./node_modules/@types"]
   },
   "include": ["src/**/*"],
-  "files": ["test-setup/setupJestAfterEnv"],
   "exclude": ["node_modules", "src/node_modules", "src/**/*.test.*"]
 }

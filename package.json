@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "A Figma prototype to XState syntax Finite State Machine representation",
   "main": "/lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "tslint /src/**/*.ts && tsc ./src/index.ts --outDir ./lib",
+    "build": "tslint /src/**/*.ts && tsc",
     "smoketest": "npm run build && node ./lib/index.js"
   },
   "repository": {
