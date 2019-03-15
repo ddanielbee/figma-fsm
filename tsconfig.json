@@ -1,26 +1,10 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
     "target": "es5",
-    "outDir": "./lib",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noEmitOnError": true,
-    "noImplicitReturns": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "downlevelIteration": true,
-    "sourceMap": false,
+    "module": "commonjs",
     "declaration": true,
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin"
-      }
-    ],
-    "typeRoots": ["./node_modules/@types"]
+    "outDir": "./lib",
+    "strict": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "src/node_modules", "src/**/*.test.*"]

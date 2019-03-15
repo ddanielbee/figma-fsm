@@ -1,1 +1,0 @@
-{"version":3,"file":"transformFileToFiniteStateMachines.js","sourceRoot":"","sources":["../../src/transformations/transformFileToFiniteStateMachines.ts"],"names":[],"mappings":";;AAEA,6FAG+C;AAElC,QAAA,kCAAkC,GAAG,UAChD,cAAyB;IAEzB,OAAA,cAAc,CAAC,QAAQ,CAAC,QAAQ;SAC7B,GAAG,CAAC,yEAAmC,CAAC;SACxC,MAAM,CAAC,UAAA,GAAG,IAAI,OAAA,GAAG,KAAK,IAAI,EAAZ,CAAY,CAAC;AAF9B,CAE8B,CAAC"}
