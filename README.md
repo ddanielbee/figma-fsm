@@ -15,7 +15,8 @@ The best way is to use [npm](https://www.npmjs.com/)
 ```
 const figmaFSM = require("figma-fsm")
 
-figmaFSM(<FigmaToken>, <FigmaFileKey>).then(result => // Do something with your result).
+figmaFSM(<FigmaToken>, <FigmaFileKey>)
+  .then(result => // Do something with your result).
 
 ```
 
@@ -24,7 +25,8 @@ figmaFSM(<FigmaToken>, <FigmaFileKey>).then(result => // Do something with your 
 ```
 import figmaFSM from "figma-fsm";
 
-figmaFSM(<FigmaToken>, <FigmaFileKey>).then(result => // Do something with your result).
+figmaFSM(<FigmaToken>, <FigmaFileKey>)
+  .then(result => // Do something with your result).
 ```
 
 ### Getting a Figma Token
