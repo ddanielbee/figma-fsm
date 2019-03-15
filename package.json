@@ -2,14 +2,14 @@
   "name": "figma-fsm",
   "version": "0.0.1",
   "description": "A Figma prototype to XState syntax Finite State Machine representation",
-  "main": "index.js",
+  "main": "/lib/index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "tsc ./src/index.ts --outDir ./lib",
+    "build": "tslint /src/**/*.ts && tsc ./src/index.ts --outDir ./lib",
     "smoketest": "npm run build && node ./lib/index.js"
   },
   "repository": {

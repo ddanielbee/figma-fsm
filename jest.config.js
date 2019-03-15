@@ -8,10 +8,10 @@ module.exports = {
   transform: {
     "^.+\\.tsx?$": "ts-jest"
   },
-  testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
   testPathIgnorePatterns: ["<rootDir>/lib"],
-  collectCoverageFrom: ["src/**/*.ts", "src/**/*.tsx"],
+  collectCoverageFrom: ["src/**/*.ts"],
   coverageReporters: ["cobertura", "text", "html"],
-  moduleFileExtensions: ["ts", "tsx", "js", "json"],
+  moduleFileExtensions: ["ts", "js", "json"],
   modulePathIgnorePatterns: ["<rootDir>[/\\\\](lib|docs|node_modules)[/\\\\]"]
 };

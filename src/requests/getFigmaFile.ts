@@ -7,8 +7,7 @@ export const getFigmaFile = async (token: string, fileKey: string) => {
     const res: AxiosResponse<FigmaDocument> = await axios.get(`${FIGMA_API_URL}${fileKey}`, {
       headers: { "X-Figma-Token": token }
     });
-    console.log(res.data);
-    return res.data ? res.data : "There's nothing in that file!";
+    return res.data;
   } catch (e) {
     console.log(e.response.data.err);
     return e.response.data.err;

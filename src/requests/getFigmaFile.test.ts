@@ -1,6 +1,6 @@
 import axios from "axios";
-import { getFigmaFile } from "../getFigmaFile";
-import { FIGMA_API_URL } from "../constants";
+import { getFigmaFile } from "./getFigmaFile";
+import { FIGMA_API_URL } from "./constants";
 
 jest.mock("axios", () => ({
   get: jest.fn(() => ({ data: undefined }))
