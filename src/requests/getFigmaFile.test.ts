@@ -1,10 +1,8 @@
-import axios from "axios";
+const axios = require("axios");
 import { getFigmaFile } from "./getFigmaFile";
 import { FIGMA_API_URL } from "./constants";
 
-jest.mock("axios", () => ({
-  get: jest.fn(() => ({ data: undefined }))
-}));
+jest.mock("axios");
 
 describe("getFigmaFile", () => {
   it("should make a get request with the correct url and token headers", () => {
@@ -12,6 +10,8 @@ describe("getFigmaFile", () => {
     const token = "my-figma-token";
     const expectedUrl = `${FIGMA_API_URL}${fileKey}`;
     getFigmaFile(token, fileKey);
-    expect(axios.get).toHaveBeenCalledWith(expectedUrl, { headers: { "X-Figma-Token": token } });
+    expect(axios.get).toHaveBeenCalledWith(expectedUrl, {
+      headers: { "X-Figma-Token": token }
+    });
   });
 });
