@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ddanielbee/figma-fsm#readme",
   "dependencies": {
-    "axios": "0.18.0"
+    "axios": "0.21.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
